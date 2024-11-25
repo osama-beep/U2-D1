@@ -23,8 +23,10 @@ header {
     margin-bottom: 1.5em;
     padding: 2em 1.5em;
 }
+
+
 header div img {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 header nav ul {
     margin: 0;
@@ -41,6 +43,250 @@ header nav li a:hover {
 }
 header nav li a::before {
     content: "\22c6\0020";
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 1.2rem;
+    }
+
+    header {
+        padding: 0 1em;
+        height: 50px;
+        position: relative;
+    }
+
+    header div {
+        position: absolute;
+        left: 1em;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    header div img {
+        padding-left: 10px;
+        width: 100px;
+        height: auto;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    #headerTitle {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 0 0 10px;
+        font-size: 1.2rem;
+        padding-left: 10px;
+        font-weight: normal;
+    }
+
+    header nav {
+        position: absolute;
+        right: 1em;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    header nav ul {
+        margin: 0;
+        padding: 0;
+        text-align: right;
+    }
+
+    header nav li {
+        display: inline-block;
+        margin-left: 1em;
+    }
+
+    header nav li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: normal;
+    }
+
+    #codeFormatting {
+        font-weight: bold;
+    }
+
+    .secondaLista {
+        padding-bottom: 5px;
+       
+    }
+
+    table {
+        width: 80%;
+        max-width: none;
+        margin: 3em auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    main {
+        padding: 1em 0.5em;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .video {
+        width: 50%;
+        height: 50%;
+        margin-bottom: 1em;
+    }
+
+    .novità {
+        font-size: 1.5rem;
+        background-color: #44444446;
+     
+       }
+
+    .novità {
+        font-size: 1.5rem;
+        background-color: #44444446;
+     
+       }
+}
+
+
+
+@media screen and (max-width: 576px) {
+    body {
+        font-size: 1rem;
+        padding: 0.5em;
+    }
+
+    header {
+        height: auto;
+        padding: 1em 0.5em;
+    }
+
+    header div img {
+        width: 110px;
+    }
+
+
+    header nav ul {
+        margin-top: 0px;
+        padding: 0;
+        text-align: center;
+    }
+    header nav li {
+        display: inline-block;
+        list-style: none;
+    }
+    header nav li a {
+        color: white;
+        text-decoration: none;
+        padding: 0.5em;
+    }
+    header nav li a:hover {
+        color: red;
+    }
+    header nav li a::before {
+        content: "\22c6\0020";
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+
+    #badge {
+        padding: 2px;
+        width: 4rem;
+        outline: 3px solid purple;
+        border: 3px solid rgb(21, 133, 207);
+    }
+
+   
+    table {
+        display: block;
+        width: fit-content;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+   .video {
+    width: 100%;
+    height: 120px;
+ 
+   }
+
+   .novità {
+    font-size: 1.5rem;
+    background-color: #44444446;
+ 
+   }
+
+
+  
+ 
+
+
+
+}
+
+@media screen and (max-width: 320px) {
+    body {
+        padding: 5px;
+    }
+
+    header {
+        padding: 2em 1.5em;
+    }
+
+    header div img {
+        width: 170px;
+    }
+
+    header nav ul {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    header nav li {
+        display: inline-block;
+        list-style: none;
+    }
+    header nav li a {
+        color: white;
+        text-decoration: none;
+        padding: 0.5em;
+    }
+    header nav li a:hover {
+        color: red;
+    }
+    header nav li a::before {
+        content: "\22c6\0020";
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    #badge {
+        padding: 2px;
+        width: 4rem;
+        outline: 3px solid purple;
+        border: 3px solid rgb(21, 133, 207);
+    }
+
+    table {
+        display: block;
+        width: fit-content;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+
 }
 
 /* MAIN */
@@ -132,15 +378,17 @@ tbody tr:last-of-type {
 /* FORM */
 input {
     padding: 5px;
-    border: 0;
-    border-bottom: 1px dashed #333;
+    border: 1px solid #ccc;
+    background-color: white;
 }
 button {
-    padding: 4px 7px;
+    padding: 8px 10px;
     background-color: #3f6bca;
     border: 0;
     color: white;
     font-weight: bold;
+    font-size: 0.9rem; 
+
 }
 
 /* ELEMENTI NELL' ASIDE */
